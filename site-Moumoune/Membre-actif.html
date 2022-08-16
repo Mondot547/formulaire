@@ -32,7 +32,7 @@
                             <label style="color: rgba(156, 9, 156, 0.685);" for="exampleInputEmail1">Email de
                                 l'entreprise</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter email">
+                                aria-describedby="emailHelp" placeholder="...">
                         </div>
                     </div>
                     <div class="col-12">
@@ -43,15 +43,17 @@
                         <div class="invalid-feedback">Entrez une addresse</div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
-                            <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control" id="inputCity">
+                        <div style="color: rgba(156, 9, 156, 0.685);" class="col-md-6">
+                            <label for="inputCity" class="form-label">Ville</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="...">
                           </div>
-                          <div class="col-md-6">
-                            <label for="inputState" class="form-label">State</label>
+                          <div style="color: rgba(156, 9, 156, 0.685);" class="col-md-6">
+                            <label for="inputState" class="form-label">Etat</label>
                             <select id="inputState" class="form-select">
-                              <option selected>Choose...</option>
-                              <option>...</option>
+                              <option selected>...</option>
+                              <option>France</option>
+                              <option>Espagne</option>
+                              <option>Canada</option>
                             </select>
                           </div>
                     </div>
@@ -114,8 +116,7 @@
                             <input class="form-control form-control-sm" id="formFileLg" type="file">
                         </div>
                     </div>
-                    <div class="row" id="lien">
-                        <p>*Obligatoire</p>
+                    <div style="margin-top: 30px;" class="row" id="lien">
                         <button class="btn1 col-3"><a
                                 href="https://www.youtube.com/results?search_query=formulaire+signature+electronique+bootstrap">Code
                                 de déonthologie</a></button>
