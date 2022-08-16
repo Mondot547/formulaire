@@ -27,12 +27,15 @@
                                 l'entreprise</label>
                             <input type="text" class="form-control" id="validationCustom01" placeholder="..." required>
                             <div class="valid-feedback">Good</div>
+                            <div class="invalid-feedback">Préciser le nom</div>
                         </div>
                         <div class="col-6">
                             <label style="color: rgba(156, 9, 156, 0.685);" for="exampleInputEmail1">Email de
                                 l'entreprise</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="...">
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback"></div>
                         </div>
                     </div>
                     <div class="col-12">
@@ -40,14 +43,16 @@
                             l'entreprise</label>
                         <input type="text" class="form-control" id="validationCustom01" placeholder="...">
                         <div class="valid-feedback">Good</div>
-                        <div class="invalid-feedback">Entrez une addresse</div>
+                        <div class="invalid-feedback">Entrer une addresse</div>
                     </div>
                     <div class="row">
                         <div style="color: rgba(156, 9, 156, 0.685);" class="col-md-6">
                             <label for="inputCity" class="form-label">Ville</label>
                             <input type="text" class="form-control" id="inputCity" placeholder="...">
-                          </div>
-                          <div style="color: rgba(156, 9, 156, 0.685);" class="col-md-6">
+                            <div class="valid-feedback"></div>
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div style="color: rgba(156, 9, 156, 0.685);" class="col-md-6">
                             <label for="inputState" class="form-label">Etat</label>
                             <select id="inputState" class="form-select">
                               <option selected>...</option>
@@ -55,14 +60,16 @@
                               <option>Espagne</option>
                               <option>Canada</option>
                             </select>
-                          </div>
+                            <div class="invalid-feedback"></div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-6">
                             <label style="color: rgba(156, 9, 156, 0.685);" for="validationCustom03">Objet de
                                 l'entreprise</label>
                             <input type="text" class="form-control" id="validationCustom01" placeholder="..." required>
-                            <div class="valid-feedback">Good</div>
+                            <div class="valid-feedback">C'est bon !</div>
+                            <div class="invalid-feedback">Préciser un objet</div>
                         </div>
                         <div class="col-6">
                             <label style="color: rgba(156, 9, 156, 0.685);" for="validationCustom05">Téléphone de
@@ -118,11 +125,15 @@
                     </div>
                     <div style="margin-top: 30px;" class="row" id="lien">
                         <button class="btn1 col-3"><a
-                                href="https://www.youtube.com/results?search_query=formulaire+signature+electronique+bootstrap">Code
+                                href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:1404abfe-edc9-3069-8d48-559ba9218be2">Code
                                 de déonthologie</a></button>
                         <button class="btn2 col-3"><a href="documentPDF">Réglement intérieur</a></button>
                         <button class="btn3 col-3"><a href="documentPDF">Charte éthique</a></button>
                     </div>
+                    <div class="col-12">
+                        <label for="formFileMultiple" class="form-label">Sélectionner les fichiers signés ci-dessus</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                      </div>
                     <div class="col-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
