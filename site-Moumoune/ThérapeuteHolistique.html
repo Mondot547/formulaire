@@ -55,6 +55,20 @@
             <div class="col mb-3">
                 <input type="text" class="form-control" name="siteWeb" id="inputSiteWeb" placeholder="Site Web">
             </div>
+            <div style="margin-top: 30px;" class="col mb-3" id="lien">
+                <button class="was-validated btn1 col-12"><a
+                        href="http://cens-avenir.com/wp-content/uploads/2022/08/Signature-Code-de-deontologie-therapeute-holistique-1jX28D25ybkenW4BpfS9bZX4UePlsVEkK7F9hSJ4l0M8-1.pdf">Code
+                        de déonthologie</a>
+                        <div class="invalid-feedback">Signer le document</div>
+                </button>
+                <button class="was-validated btn2 col-12"><a href="http://cens-avenir.com/wp-content/uploads/2022/08/Signature-Reglement-interieur-de-lassociation.pdf">Réglement intérieur</a><div class="invalid-feedback">Signer le document</div></button>
+                <button class="was-validated btn3 col-12"><a href="http://cens-avenir.com/wp-content/uploads/2022/08/Date-Signature-Charte-de-CENS.pdf">Charte éthique</a><div class="invalid-feedback">Signer le document</div></button>
+                <button class="was-validated btn4 col-12"><a href="http://cens-avenir.com/wp-content/uploads/2022/08/Signature-Documents-comple%CC%81mentaires.pdf">Document complémentaire</a><div class="invalid-feedback">Signer le document</div></button>
+            </div>
+            <div class="col mb-3">
+                <label for="formFileMultiple" class="form-label">Fournir les documents demandé ci-dessus</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </div>
             <div>
                 <p>Demande d'inscription à l'annuaire <a href="http//:www.cens-avenir.com">http//:www.cens-avenir.com</a> :</p>
             </div>
@@ -108,28 +122,32 @@
             text-decoration: none;
             color: #b96852;
         }
-
+        #lien .btn4 a {
+            text-decoration: none;
+            color: #ff08088c;
+        }
         #lien .btn1 {
             margin-top: 10px;
             background-color: #FF9376;
             border-radius: 7px;
-            margin-left: 6%;
         }
 
         #lien .btn2 {
             margin-top: 10px;
             background-color: #097905b0;
             border-radius: 7px;
-            margin-left: 6%;
         }
 
         #lien .btn3 {
             margin-top: 10px;
             background-color: #ff8a059a;
             border-radius: 7px;
-            margin-left: 6%;
         }
-
+        #lien .btn4 {
+            margin-top: 10px;
+            background-color: #004e759a;
+            border-radius: 7px;
+        }
         section {
             border-radius: 10px;
             padding: 15px;
