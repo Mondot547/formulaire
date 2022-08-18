@@ -30,11 +30,11 @@
                     <input type="tel" class="form-control" placeholder="Tel">
                 </div>
                 <div class="col mb-3">
-                    <p>Niveau de formation initiale</p>
+                    <p>Niveau de formation initiale:</p>
                     <!--checklist-->
                 </div>
                 <div class="col mb-3">
-                    <p>Vous êtes :</p>
+                    <p>Vous êtes:</p>
                     <!--chacklist-->
                 </div>
                 <div class="col mb-3">
@@ -60,7 +60,7 @@
                 <div class="col mb-3">
                     <p>Modalité de financement:</p>
                     <!--checklist-->
-                    <ul>
+                    <ul class="liste">
                         <li>Par le stagiaire:
                             <div class="col mb-3">
                                 <p>ci-joint un chèque de 2000€ / N° Chèque:</p>
@@ -78,7 +78,7 @@
                     </ul>
                 </div>
                 <div class="col mb-3">
-                    <p>Nom et coordonées de la personne à joindre pour le dossier de financement</p>
+                    <p>Nom et coordonées de la personne à joindre pour le dossier de financement:</p>
                     <input type="text" class="form-control" placeholder="...">
                 </div>
                 <div class="col mb-3">
@@ -91,5 +91,23 @@
             </form>
         </section>
     </main>
+    <style>
+        .liste {
+            list-style: none;
+        }
+        li {
+            padding: 5px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(171, 3, 107, 0.842);
+            border-radius: 7px;
+        }
+        input:hover {
+            background-color: rgba(231, 10, 238, 0.513);
+        }
+        a {
+            text-decoration: none;
+            color: cadetblue;
+        }
+    </style>
 </body>
 </html>
