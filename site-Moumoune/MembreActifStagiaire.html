@@ -95,12 +95,9 @@
               placeholder="Site Web"
             />
           </div>
-          <div id="lien">
+          <div class="col mb-3" id="lien">
             <button class="was-validated btn1 col-12">
-              <a
-                href="#"
-                >Attestation d'accompagnement</a
-              >
+              <a href="#">Attestation d'accompagnement</a>
               <div class="invalid-feedback">Signer le document</div>
             </button>
             <button class="was-validated btn2 col-12">
@@ -114,7 +111,12 @@
               <a href="documentPDF">Charte éthique</a>
               <div class="invalid-feedback">Signer le document</div>
             </button>
+            <button class="was-validated btn4 col-12"><a href="http://cens-avenir.com/wp-content/uploads/2022/08/Signature-Documents-comple%CC%81mentaires.pdf">Document complémentaire</a><div class="invalid-feedback">Signer le document</div></button>
           </div>
+          <div class="col mb-3">
+            <label for="formFileMultiple" class="form-label">Fournir les documents demandé ci-dessus</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
           <div class="form-check mb-1">
             <input
               class="form-check-input"
@@ -149,10 +151,10 @@
           border: none;
         }
         .form-check-label {
-            margin-top: 20px;
+          margin-top: 20px;
         }
         .form-check-input {
-            margin-top: 25px;
+          margin-top: 25px;
         }
         #lien p {
           margin-top: 50px;
@@ -190,6 +192,15 @@
           background-color: #ff8a059a;
           border-radius: 7px;
         }
+        #lien .btn4 a {
+          text-decoration: none;
+          color: #ff08088c;
+        }
+        #lien .btn4 {
+          margin-top: 10px;
+          background-color: #004e759a;
+          border-radius: 7px;
+        }
         section {
           border: 1px solid silver;
           border-radius: 10px;
@@ -206,6 +217,9 @@
             2px 17px 17px 0px #ff260094 -9px 21px 18px 0px #fff312a8,
             -9px 6px 11px 0px #ff08088c, -11px -9px 11px 0px #b9ff178c,
             -11px -9px 11px 0px #17ff7091, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        }
+        input:hover {
+            background-color: rgba(27, 194, 138, 0.774);
         }
       </style>
     </main>

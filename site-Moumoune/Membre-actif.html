@@ -107,14 +107,14 @@
                             d'adhésion</label>
                         <textarea class="form-control" aria-label="With textarea" cols="30" rows="5"></textarea>
                     </div>
-                    <div class="row">
-                        <div class="was-validated col-6">
+                    <div class="col">
+                        <div class="was-validated col-12">
                             <label style="color: rgba(185, 0, 0, 0.63);" for="formFileSm" class="form-label">Attestation
                                 d'accord d'adhésion</label>
                             <input class="form-control form-control-sm" id="formFileSm" type="file">
                             <div class="invalid-feedback">Fournisser l'attestation</div>
                         </div>
-                        <div class="was-validated col-6">
+                        <div class="was-validated col-12">
                             <label style="color: rgba(185, 0, 0, 0.63);" for="formFileSm" class="form-label">Tout
                                 document nécessaire selon toute forme
                                 juridique</label>
@@ -122,14 +122,15 @@
                             <div class="invalid-feedback">fournisser les documents demandés</div>
                         </div>
                     </div>
-                    <div style="margin-top: 30px;" class="row" id="lien">
-                        <button class="was-validated btn1 col-3"><a
+                    <div style="margin-top: 30px;" class="col" id="lien">
+                        <button class="was-validated btn1 col-12"><a
                                 href="http://cens-avenir.com/wp-content/uploads/2022/08/Signature-Code-de-deontologie-therapeute-holistique-1jX28D25ybkenW4BpfS9bZX4UePlsVEkK7F9hSJ4l0M8-1.pdf">Code
                                 de déonthologie</a>
                                 <div class="invalid-feedback">Signer le document</div>
                         </button>
-                        <button class="was-validated btn2 col-3"><a href="http://cens-avenir.com/wp-content/uploads/2022/08/Signature-Reglement-interieur-de-lassociation.pdf">Réglement intérieur</a><div class="invalid-feedback">Signer le document</div></button>
-                        <button class="was-validated btn3 col-3"><a href="documentPDF">Charte éthique</a><div class="invalid-feedback">Signer le document</div></button>
+                        <button class="was-validated btn2 col-12"><a href="http://cens-avenir.com/wp-content/uploads/2022/08/Signature-Reglement-interieur-de-lassociation.pdf">Réglement intérieur</a><div class="invalid-feedback">Signer le document</div></button>
+                        <button class="was-validated btn3 col-12"><a href="documentPDF">Charte éthique</a><div class="invalid-feedback">Signer le document</div></button>
+                        <button class="was-validated btn4 col-12"><a href="http://cens-avenir.com/wp-content/uploads/2022/08/Signature-Documents-comple%CC%81mentaires.pdf">Document complémentaire</a><div class="invalid-feedback">Signer le document</div></button>
                     </div>
                     <div class="col-12">
                         <label style="color: rgba(185, 0, 0, 0.63);" for="formFileMultiple" class="form-label">Sélectionner les fichiers signés ci-dessus</label>
@@ -164,11 +165,11 @@
                     }
 
                     label {
-                        margin-top: 50px;
+                        margin-top: 20px;
                     }
 
                     .form-check-input {
-                        margin-top: 55px;
+                        margin-top: 25px;
                     }
 
                     .btn {
@@ -199,21 +200,27 @@
                         margin-top: 10px;
                         background-color: #FF9376;
                         border-radius: 7px;
-                        margin-left: 6%;
                     }
 
                     #lien .btn2 {
                         margin-top: 10px;
                         background-color: #097905b0;
                         border-radius: 7px;
-                        margin-left: 6%;
                     }
 
                     #lien .btn3 {
                         margin-top: 10px;
                         background-color: #ff8a059a;
                         border-radius: 7px;
-                        margin-left: 6%;
+                    }
+                    #lien .btn4 a {
+                        text-decoration: none;
+                        color: #ff08088c;
+                    }
+                    #lien .btn4 {
+                        background-color: #004e759a;
+                        border-radius: 7px;
+                        margin-top: 10px;
                     }
 
                     section {
