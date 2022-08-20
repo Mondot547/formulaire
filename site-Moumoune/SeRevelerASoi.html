@@ -24,6 +24,7 @@
                 class="form-control"
                 placeholder="Prénom"
                 aria-label="First name"
+                required
               />
             </div>
             <div class="col mb-3">
@@ -32,6 +33,7 @@
                 class="form-control"
                 placeholder="Nom"
                 aria-label="Last name"
+                required
               />
             </div>
           </div>
@@ -41,19 +43,20 @@
               class="form-control"
               id="inputAddress"
               placeholder="Adresse"
+              required
             />
           </div>
           <div class="col mb-3">
-            <input type="tel" class="form-control" placeholder="Tel" />
+            <input type="tel" class="form-control" placeholder="Tel" required>
           </div>
           <div class="col mb-3">
             <label>Niveau de formation initiale:</label>
-            <input class="form-control" type="text" placeholder="...">
+            <input class="form-control" type="text" placeholder="..." required>
           </div>
           <div class="col mb-3">
             <p>Vous êtes:</p>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                 <label class="form-check-label" for="flexCheckDefault">
                   Salarié.
                 </label>
@@ -103,7 +106,7 @@
           </div>
           <div class="col mb-3">
             <p>Modalité de financement:</p>
-            <ul class="liste">
+            <ul class="liste required">
               <li>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -193,6 +196,18 @@
           -9px 6px 11px 0px #b3f706be, -11px -9px 11px 0px #b9ff178c,
           -11px -9px 11px 0px #60cf8be8, 5px 5px 15px 5px rgba(0, 0, 0, 0);
       }
+      input:invalid {
+            border: 2px solid red;
+        }
+        input:valid {
+            border: 2px solid lightgreen;
+        }
+        .form-check:invalid {
+          border: 2px solid red;
+        }
+        .form-check:valid {
+          border: 2px solid lightgreen;
+        }
       .liste {
         list-style: none;
         margin-left: 0;

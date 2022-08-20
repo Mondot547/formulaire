@@ -24,6 +24,7 @@
                 class="form-control"
                 placeholder="Prénom"
                 aria-label="First name"
+                required
               />
             </div>
             <div class="col mb-3">
@@ -32,6 +33,7 @@
                 class="form-control"
                 placeholder="Nom"
                 aria-label="Last name"
+                required
               />
             </div>
           </div>
@@ -41,14 +43,15 @@
               class="form-control"
               id="inputAddress"
               placeholder="Adresse"
+              required
             />
           </div>
           <div class="col mb-3">
-            <input type="tel" class="form-control" placeholder="Tel" />
+            <input type="tel" class="form-control" placeholder="Tel" required/>
           </div>
           <div class="col mb-3">
             <label>Niveau de formation initiale:</label>
-            <input class="form-control" type="text" placeholder="...">
+            <input class="form-control" type="text" placeholder="..." required />
           </div>
           <div class="col mb-3">
             <p>Vous êtes:</p>
@@ -75,37 +78,37 @@
             <label for="validationCustom01"
               >Poste occupé actuellement ou avant:</label
             >
-            <input type="text" class="form-control" placeholder="..." />
+            <input type="text" class="form-control" placeholder="..." required/>
           </div>
           <div class="col mb-3">
             <label for="validationCustom01"
               >Objectif de cette formation ?</label
             >
-            <input type="text" class="form-control" placeholder="..." />
+            <input type="text" class="form-control" placeholder="..." required/>
           </div>
           <div class="col mb-3">
             <label for="validationCustom01">Objectif professionel ?</label>
-            <input type="text" class="form-control" placeholder="..." />
+            <input type="text" class="form-control" placeholder="..." required/>
           </div>
           <div class="col mb-3">
             <label for="validationCustom01"
               >Comment vous nous avez connu et pourquoi vous vous êtes inscrit à
               CENS (l'élément décisif) ?</label
             >
-            <input type="text" class="form-control" placeholder="..." />
+            <input type="text" class="form-control" placeholder="..." required />
           </div>
           <div class="col mb-3">
             <label for="validationCustom01"
               >Avez-vous déjà des connaissances ou des pratiques énergétique,
               depuis combien de temps ?</label
             >
-            <input type="text" class="form-control" placeholder="..." />
+            <input type="text" class="form-control" placeholder="..." required/>
           </div>
           <div class="col mb-3">
             <p>Modalité de financement:</p>
-            <ul class="liste">
+            <ul class="liste required">
               <li>
-                <div class="form-check">
+                <div class="form-check" aria-required="true">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                       Par le stagiaire:
@@ -122,7 +125,7 @@
                 </div>
               </li>
               <li>
-                <div class="form-check">
+                <div class="form-check" aria-required="true">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
                         Par l'entreprise:
@@ -145,20 +148,20 @@
               Nom et coordonées de la personne à joindre pour le dossier de
               financement:
             </p>
-            <input type="text" class="form-control" placeholder="..." />
+            <input type="text" class="form-control" placeholder="..." required />
           </div>
           <div class="col mb-1">
             <label for="validationCustom01">Documents:</label><br />
             <a href="http://cens-avenir.com/wp-content/uploads/2022/08/CONDITIONS_GENERALES_DE_VENTE_CENS.pdf">Condition Générale de Vente:</a>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
             <label class="form-check-label" for="flexCheckDefault">
               Je comprends que l'envoi de ce formulaire vaut signature.
             </label>
           </div>
           <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
             <label class="form-check-label" for="flexCheckDefault">
               Lu et approuvé.
             </label>
