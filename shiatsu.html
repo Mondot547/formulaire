@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <title>Shiatsu niveau 2</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <h1 class="mb-5">Shiatsu niveau 1</h1>
+        <form action="submit" method="post">
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Prénom"
+                aria-label="First name"
+                required
+              />
+            </div>
+            <div class="col mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nom"
+                aria-label="Last name"
+                required
+              />
+            </div>
+          </div>
+          <div class="col mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="Adresse"
+              required
+            />
+          </div>
+          <div class="col mb-3">
+            <input type="tel" class="form-control" placeholder="Tel" required/>
+          </div>
+          <div class="col mb-3">
+            <label>Niveau de formation initiale:</label>
+            <input class="form-control" type="text" placeholder="..." required />
+          </div>
+          <div class="col mb-3">
+            <p>Vous êtes:</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Salarié.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Travailleur indépendant.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Demandeur d'emploi.
+                </label>
+            </div>        
+          </div>
+          <div class="col mb-3">
+            <label for="validationCustom01"
+              >Poste occupé actuellement ou avant:</label
+            >
+            <input type="text" class="form-control" placeholder="..." required/>
+          </div>
+          <div class="col mb-3">
+            <label for="validationCustom01"
+              >Objectif de cette formation ?</label
+            >
+            <input type="text" class="form-control" placeholder="..." required/>
+          </div>
+          <div class="col mb-3">
+            <label for="validationCustom01">Objectif professionel ?</label>
+            <input type="text" class="form-control" placeholder="..." required/>
+          </div>
+          <div class="col mb-3">
+            <label for="validationCustom01"
+              >Comment vous nous avez connu et pourquoi vous vous êtes inscrit à
+              CENS (l'élément décisif) ?</label
+            >
+            <input type="text" class="form-control" placeholder="..." required />
+          </div>
+          <div class="col mb-3">
+            <label for="validationCustom01"
+              >Avez-vous déjà des connaissances ou des pratiques énergétique,
+              depuis combien de temps ?</label
+            >
+            <input type="text" class="form-control" placeholder="..." required/>
+          </div>
+          <div class="col mb-3">
+            <p>Modalité de financement:</p>
+            <ul class="liste required">
+              <li>
+                <div class="form-check" aria-required="true">
+                  <p>Par le stagiaire:</p>
+                </div>
+                <div class="col mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">ci-joint un chèque de 2000€ / N° Chèque:</label>
+                  <input
+                    type="text"
+                    class="form-control mb-3"
+                    placeholder="..."
+                  />
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      ou par virement: CENS
+                    </label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check" aria-required="true">
+                  <div class="form-check" aria-required="true">
+                    <p>Par l'entreprise:</p>
+                  </div>
+                  <div class="col mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">ci-joint un chèque de 2000€ / N° Chèque:</label>
+                    <input
+                      type="text"
+                      class="form-control mb-3"
+                      placeholder="..."
+                    />
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        ou par virement: CENS
+                      </label>
+                  </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-5">
+            <p>
+              Nom et coordonées de la personne à joindre pour le dossier de
+              financement:
+            </p>
+            <input type="text" class="form-control" placeholder="..." required />
+          </div>
+          <div class="col mb-1">
+            <label for="validationCustom01">Documents:</label><br />
+            <a href="http://cens-avenir.com/wp-content/uploads/2022/08/CONDITIONS_GENERALES_DE_VENTE_CENS.pdf">Condition Générale de Vente:</a>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+            <label class="form-check-label" for="flexCheckDefault">
+              Je comprends que l'envoi de ce formulaire vaut signature.
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+            <label class="form-check-label" for="flexCheckDefault">
+              Lu et approuvé.
+            </label>
+          </div>
+          <button type="submit" class="btn btn-danger">Envoyer</button>
+        </form>
+      </section>
+    </main>
+    <style>
+      main {
+        margin: 5%;
+      }
+      h1 {
+        border-bottom: 2px solid #028d3791;
+        text-align: center;
+        color: #028d3791;
+      }
+      section {
+        border: 1px solid silver;
+        border-radius: 10px;
+        padding: 15px;
+        -webkit-box-shadow: 4px -4px 15px 0px #351fff80,
+          12px -11px 7px 0px #f03f0ebe, 20px -5px 7px 0px #f03f0ebe,
+          20px 6px 7px 0px #f0a40da6, 13px 12px 17px 0px #f0910da6,
+          2px 17px 17px 0px #87312294, -9px 21px 18px 0px #87312294,
+          -9px 6px 11px 0px #ff7f088c, -11px -9px 11px 0px #f50606b2,
+          -11px -9px 11px 0px #312b0629, 5px 5px 15px 5px #312b0629;
+        box-shadow: 4px -4px 15px 0px #72ac0daf, 12px -11px 7px 0px #1d0dac80,
+          20px -5px 7px 0px #cc9215c4, 20px 6px 7px 0px #cc9215c4,
+          13px 12px 17px 0px #199e76,
+          2px 17px 17px 0px #91b24494 -9px 21px 18px 0px #199e76,
+          -9px 6px 11px 0px #b3f706be, -11px -9px 11px 0px #b9ff178c,
+          -11px -9px 11px 0px #60cf8be8, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+      }
+      .liste {
+        list-style: none;
+        margin-left: 0;
+      }
+      li {
+        padding: 5px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(171, 3, 107, 0.842);
+        border-radius: 7px;
+      }
+      input:hover {
+        background-color: rgba(230, 10, 238, 0.349);
+      }
+      a {
+        text-decoration: none;
+        color: cadetblue;
+      }
+      a:hover {
+        color: rgba(230, 10, 238, 0.349);
+      }
+    </style>
+  </body>
+</html>
